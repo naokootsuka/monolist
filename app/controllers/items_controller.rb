@@ -16,7 +16,7 @@ class ItemsController < ApplicationController
   end
 
   private
-  def set_item
+    def set_item
     @item = Item.find(params[:id])
-  end
+    end
 end
