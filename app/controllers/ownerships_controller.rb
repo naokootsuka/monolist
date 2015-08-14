@@ -41,12 +41,12 @@ class OwnershipsController < ApplicationController
     # Wantedボタンがされた時には「Want」が設定されています。
   def destroy
     if params[:type] == "Have"
-     @item = haves.haved
+     @item = Item.find(params[:item_id])
      current_user.unhave(@item)
     end
 
     if params[:type] == "Want"
-     @item = wants.wanted
+     @item = Item.find(params[:item_id])
      current_user.unwant(@item)
     end
   end
