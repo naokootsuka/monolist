@@ -1,1 +1,3 @@
 <h1>持っているものランキング</h1>
+
+Have.group(:item_id).order('count_item_id desc').limit(10).count(:item_id).keys

@@ -16,7 +16,7 @@ class ItemsController < ApplicationController
     @haves = @item.have_users
     @wants = @item.want_users
   end
-  
+
   
   private
     def set_item

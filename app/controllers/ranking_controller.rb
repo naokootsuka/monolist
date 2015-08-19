@@ -1,8 +1,8 @@
 class RankingController < ApplicationController
-  def index
+  def have
   end
   
-  
-  
+  def want 
+  end
 
 end
