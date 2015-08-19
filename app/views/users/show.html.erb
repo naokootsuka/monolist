@@ -1,6 +1,6 @@
 <% content_for :head do %>
   <title><%= @user.name %> - Monolist</title>
-  <description><%= @user.name %>の持っているモノ、欲しいモノ、別に知りたくないとは思いますが教えちゃいます。</description>
+  <meta name="description" content="<%= @user.name %>の持っているモノ、欲しいモノ、別に知りたくないとは思いますが教えちゃいます。"/>
 <% end %>
 
 <%= render 'profile' , user: @user %>
