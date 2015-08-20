@@ -1,1 +1,12 @@
-<h1>欲しいものランキング</h1>
+<div class="container">
+  <div class="container-ranking clearfix">
+<h3>欲しいものランキング</h3>
+
+<ol>
+<% @items.each do |i| %>
+  <li><%= image_tag i.small_image %>
+      <%= i.title %></li>
+    <% end %>
+</ol>
+  </div>
+</div>
